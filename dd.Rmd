@@ -18,56 +18,91 @@ library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Profile
+Undergraduate third-year Business Engineering student interested to get involved in business analytics and research. Skillful in teamwork, outgoing and objective oriented. Educated in Business intelligence, systemic thinking, ICTs, research, and strategy. Focused on innovation, the key shifts in the industries & societies and sustainable development.
+
+
+
+# Skills
+ * Teamwork, Communication, Critical thinking,Leadership,
+ * Interdisciplinarity, Problem Solving, Adaptability, Data Analysis
+
 # Education
 ```{r}
 tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "Bachelor of Business Engineering", "Universidad del Pacífico", "Lima, Perú", "Aug. 2016 - Present", "WAM of 14.4",
-  "Bachelor of Business Engineering", "Universidad del Pacífico", "Lima, Perú", "Aug. 2016 - Present", "111 Credits recognized",
-  "Bsc of Management & Digital Innovation", "University of London - London School of Economics", "Lima, Perú", "Oct. 2018 - Present", "Marks pending",
+  ~ degree, ~ uni, ~ loc, ~ dates, 
+  "Bachelor of Business Engineering", "Universidad del Pacífico", "Lima, Perú", "Aug. 2016 - Present", 
+
+  "Bsc of Management & Digital Innovation", "University of London - London School of Economics", "Lima, Perú", "Oct. 2018 - Present",
 
 ) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
-```
+  detailed_entries(degree, dates, uni, loc)
+``` 
 
 # Experience
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Data science intern", "Credo consulting", "Lima, Perú", "Mar. 2019 - Present", "Data parsing"
+  "Data science intern", "Credo consulting", "Lima, Perú", "Mar. 2019 - Present", "Data parsing & web scraping",
+   "Data science intern", "Credo consulting", "Lima, Perú", "Mar. 2019 - Present", "Data cleaning & manipulation",
+   "Data science intern", "Credo consulting", "Lima, Perú", "Mar. 2019 - Present", "Data analysis & visualization"
+   
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
 
+# Languages
+
+ * Spanish (Native)
+ * English (Advanced)
+ * Mandarin (Basic)
+
+# Computer Skills
+
+## Programming languages
+ * R (Intermediate)
+ * SQL (Intermediate)
+ * Python (Intermediate)
+ 
+## Adobe Creative Cloud Suite
+ * Adobe Photoshop (Intermediate)
+ * Adobe InDesign (Intermediate)
+ * Adobe Illustrator (Basic)
+ * Adobe Premiere Pro (Basic)
+
+
 \newpage
 
-<!-- # Relevant Skills -->
-<!-- ```{r} -->
-<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
-<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
-<!-- ``` -->
+## Programming languages
+ * R (Intermediate)
+ * SQL (Intermediate)
+ * Python (Intermediate)
+ 
 
-# Awards & Achievements
-## Awards
+
+## Microsoft Office Suite
+ * Microsoft Word (Intermediate)
+ * Microsoft Power Point (Intermediate)
+ * Microsoft Excel (Intermediate)
+
+## Others
+ * Tableau (Basic)
+ * Bloomberg (Basic)
+ 
+# Extra-Curricular Activities
+
 ```{r}
 tribble(
-  ~ award, ~ from, ~ year,
-  "Commerce Dean's Honour", "Monash", "2017",
-  "Commerce Dean's Commendation", "Monash", "2016",
-  "Science Dean’s List", "Monash", "2014-2016",
-  "International Institute of Forecasters Award", "IIF", "2014",
-  "Rotary Youth Leadership Award", "Rotary", "2013"
-) %>%
-  brief_entries(award, year, from)
+  ~ role, ~ assoc, ~ loc, ~ dates, ~dets,
+  "CDMO", "Peruvian Ventures", "Lima, Perú", "Jan. 2019 - Present", "Responsible for the development of the master plan and the implementation of campaigns.",
+  "CDMO", "Peruvian Ventures", "Lima, Perú", "Jan. 2019 - Present", "Research and data interpretation of social media.",
+  "CDMO", "Peruvian Ventures", "Lima, Perú", "Jan. 2019 - Present", "Brand management and community building.",
+  
+  "Assoc. & Proc. Mg", "Best Buddy UP", "Lima, Perú", "Aug. 2017 - Present", "Responsible for the supervision of activities during the introduction week and others.",
+  "Assoc. & Proc. Mg", "Best Buddy UP", "Lima, Perú", "Aug. 2017 - Present", "Responsible for the procurement process and supplies management.",
+   
+   
+) %>% 
+  detailed_entries(role, dates, assoc, loc, dets)
 ```
 
-
-## Competitions
-```{r}
-tribble(
-  ~ competition, ~ from, ~ year,
-  "UseR! 2018 Datathon Champion", "UseR!", "2018",
-  "RMIT SBITL Analytics Competition Champion", "RMIT", "2017",
-  "RMIT SBITL Analytics Competition Champion", "RMIT", "2016"
-) %>%
-  brief_entries(competition, year, from)
