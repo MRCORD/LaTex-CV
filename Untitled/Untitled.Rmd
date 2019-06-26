@@ -1,0 +1,39 @@
+---
+name: Oscar Rivas Delgado
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: BCom(Hons), BSc
+position: Business Engineering student 
+address: Jr Campania 208 Bellavista, Callao
+phone: +51 949767204
+email: oj.rivasd@alum.up.edu.pe
+github: MRCORD
+linkedin: MRCORD
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Some stuff about me
+tttttt
+tttt
+
+# Skills 
+## DATA SCIENCE
+ttttt
+
+## APPLICATIONS
+RStudio, SAS EG, SQL Server, Excel, Tableau
+
+## LANGUAGES
+ * R (Intermediate)
+ * SQL (Intermediate)
+ * Python (Intermediate)
+ 
+## LEADERSHIP
+Former non-profit board member and president, presenting information to mid-size audience, mentorship of
+peers, explaining technical material to non-technical audience and management, oversight of interns
